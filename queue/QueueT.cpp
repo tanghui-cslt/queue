@@ -7,4 +7,3 @@ void init_queue(pqueue p_queue)
 	p_queue->queue = new node[MAX_SIZE];
 
 }
-
