@@ -1,4 +1,5 @@
 #include "QueueT.h"
+#include<iostream>
 
 void init_queue(pqueue p_queue)
 {
@@ -9,11 +10,11 @@ void init_queue(pqueue p_queue)
 }
 bool enqueue(pqueue p_queue)
 {
-
+	return false;
 }
 bool dequeue(pqueue p_queue)
 {
-
+	return false;
 }
 bool is_empty(pqueue p_queue)
 {
