@@ -9,6 +9,7 @@ int main()
 {
 	QueueT head_queue ;
 	init_queue(&head_queue);
+
 	cout << head_queue.front << endl;
 
 }
