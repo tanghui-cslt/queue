@@ -1,13 +1,12 @@
 #include "QueueT.h"
+#include <iostream>
 
-
-void init_queue(pqueue p_queue)
+void init_queue(pqueue p_queue, int len)
 {
 	p_queue->front = 0;
 	p_queue->rear = 0;
-	p_queue->queue = new node[MAX_SIZE];
-	p_queue->max_size = MAX_SIZE;
-
+	p_queue->queue = new node[len];
+	p_queue->max_size = len;
 }
 
 bool enqueue(pqueue p_queue, node en_queue)
@@ -52,13 +51,13 @@ bool isfull(pqueue p_queue)
 void traverse_queue(pqueue p_queue)
 {
 	int i = p_queue->front;
-	/*printf("队中的元素是:\n");
+	printf("队中的元素是:\n");
 	while (i%p_queue->max_size != p_queue->rear)
 	{
 		printf("%d ", p_queue->queue[i].index);
 		i++;
 	}
-	printf("\n");*/
+	printf("\n");
 }
 void  delete_queue(pqueue p_queue)
 {

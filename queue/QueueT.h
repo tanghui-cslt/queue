@@ -16,10 +16,10 @@ typedef struct QueueT {
 	int max_size;
 }*pqueue;
 /*
-设计一个循环队列
+// 循环队列 留出一个空闲位置
 */
-extern void init_queue(pqueue p_queue);
-extern bool enqueue(pqueue p_queue,node en_queue);
+void init_queue(pqueue p_queue, int len);
+bool enqueue(pqueue p_queue,node en_queue);
 bool dequeue(pqueue p_queue,pnode de_queue);
 bool isempty(pqueue p_queue);
 bool isfull(pqueue p_queue);
